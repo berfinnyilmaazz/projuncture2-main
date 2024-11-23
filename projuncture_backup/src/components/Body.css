@@ -1,0 +1,330 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.body-div{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.profile-button{
+    background-color: #4A628A;
+}
+
+.card{
+    width: 18rem;
+}
+
+
+
+
+
+.main {
+    height: 70vh;
+    width: calc(100% - 20px);
+}
+
+.wrapper,
+.slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.slide .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.image-data span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.image-data h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7AB2D3;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+a.button:hover {
+    color: #333;
+    background-color: #B9E5E8;
+}
+
+.main .arrows button {
+    pointer-events: auto;
+    padding: 10px;
+    border: 2px solid #555;
+    background-color: #fff;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#thirdprev {
+    position: absolute;
+    top: 50vh;
+    left: 50px; /* Sol tarafta konum */
+}
+
+#thirdnext {
+    position: absolute;
+    top: 50vh;
+    right: 50px; /* Sağ tarafta konum */
+}
+
+
+
+
+
+
+
+
+
+.card-profiles-container {
+    display: flex; /* Card'ları yatay hizalamak için */
+    gap: 20px; /* Card'lar arasında boşluk bırakmak için */
+    overflow: hidden; /* Taşmaları engellemek için */
+    justify-content: center; /* Card'ları yatayda ortalamak için */
+}
+
+.card {
+    flex: 0 0 calc(100% / 3 - 20px); /* Card'ların genişliği (aynı anda 3 card gösterilecek) */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-profiles-container .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    pointer-events: none; 
+}
+
+.card-profiles-container .arrows button {
+    pointer-events: auto;
+    padding: 10px;
+    border: 2px solid #555;
+    background-color: #fff;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#prev {
+    position: relative;
+    top: 65vh;
+    left: 100px; /* Sol tarafta konum */
+}
+
+#next {
+    position: relative;
+    top: 65vh;
+    right: 100px; /* Sağ tarafta konum */
+}
+
+
+
+
+
+
+
+
+
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #4A628A;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;   
+}
+
+.card-list .card-link .badge{
+    color: #555;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #4A628A;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #4A628A;   
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #4A628A;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    transition: transform 10s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card-wrapper {
+    flex: 0 0 30%;
+    margin: 0 10px;
+    transition: transform 10s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-container .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    pointer-events: none; /* Butonların tıklanabilir alanlarını düzenlemek için */
+}
+
+
+.card-container .arrows button {
+    pointer-events: auto;
+    padding: 10px;
+    border: 2px solid #555;
+    background-color: #fff;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.arrows button:hover {
+    background-color: #4A628A;
+    color: #fff;
+    border: 2px solid #4A628A;
+}
+
+#secondprev {
+    position: relative;
+    top: 150vh;
+    left: 50px; /* Sol tarafta konum */
+}
+
+#secondnext {
+    position: relative;
+    top: 150vh;
+    right: 20px; /* Sağ tarafta konum */
+}
+
