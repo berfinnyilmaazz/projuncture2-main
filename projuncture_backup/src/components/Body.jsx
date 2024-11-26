@@ -98,7 +98,7 @@ export default function Body () {
                         </div>
                     </div>
                 
-                </div>
+                </div> 
             ))}
 
                     <div className="arrows">
