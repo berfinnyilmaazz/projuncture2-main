@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.body-div{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.project-button {
+    height: 10vh;
+}
+
+.project-button button{
+    border-radius: 25px;
+    background-color: #4A628A;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    transition: all 0.3s ease;
+}
+
+.project-button button:hover {
+    color: #333;
+    background-color: #B9E5E8;
+}
+
+.projects .card {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card_img{
+    height: 100px;
+    width: 100px;
+}
+
+.projects .btn {
+    margin-top: 30px;
+    background-color: #4A628A;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.projects .btn:hover{
+    background-color: #B9E5E8;
+    color: #333;
+}

@@ -4,13 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
-.body-div{
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 main{
     margin-top: 100px;
@@ -68,13 +62,13 @@ main{
 .image-data span.text {
     font-size: 14px;
     font-weight: 400;
-    color: #fff;
+    color: #333;
 }
 
 .image-data h2 {
     font-size: 45px;
     font-weight: 600;
-    color: #fff;
+    color: #333;
 }
 
 a.button {

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import '../components/Body.css';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -11,7 +8,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export default function Body () {
     const settings = {
         dots: true,
-        infinite: true,
+        infinite: true, 
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1 
