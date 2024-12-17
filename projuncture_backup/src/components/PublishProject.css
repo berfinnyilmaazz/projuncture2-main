@@ -1,0 +1,26 @@
+.container.mb-3{
+    display: flex;
+}
+
+.project{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+    border-radius: 15px;
+    height: max-content;
+    margin: 20px 0 0 20px;
+}
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #768499;
+}
+
+.form-title{
+    font-size: 20px;
+    color: #1e293b;
+    font-weight: 500;
+    margin-left: 10px;
+}
