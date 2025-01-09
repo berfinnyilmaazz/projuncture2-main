@@ -1,0 +1,13 @@
+.column {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+.column::-webkit-scrollbar{
+    display: none;
+}
+
+DragDropContext{
+    margin-bottom: 20px;
+}

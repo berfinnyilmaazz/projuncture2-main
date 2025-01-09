@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import '../components/Projects.css';
 
 
 export default function Projects () {
+
+    const navigate = useNavigate();
+
     return (
         <main>
             <div className="project-button">
-                <button className="btn">Proje Yayınla</button>
+                <button onClick={() => navigate('/publish-project')} className="btn">Proje Yayınla</button>
             </div>
 
 
@@ -27,7 +31,7 @@ export default function Projects () {
                                 <p className="card-text">
                                 <small className="text-body-secondary">Last updated 3 mins ago</small>
                                 </p>
-                                <button className="btn">Projeyi Görüntüle</button>
+                                <button onClick={() => navigate('/project-details')} className="btn">Projeyi Görüntüle</button>
                             </div>
                         </div>
                     </div>

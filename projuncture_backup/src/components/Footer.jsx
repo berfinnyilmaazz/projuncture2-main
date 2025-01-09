@@ -3,6 +3,7 @@ import fb from '../assets/fbimg.png'
 import x from '../assets/ximg.png'
 import linkedin from '../assets/linkedinimg.png'
 import insta from '../assets/instaimg.png'
+import { Link } from 'react-router-dom';
 
 export default function Footer () {
     return (

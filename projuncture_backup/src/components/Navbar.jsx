@@ -1,18 +1,19 @@
 import logo from '../assets/logo2.png'
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-white shadow fixed-top">
             <div className="container">
                 <div className="logo">
-                    <a href="#">
+                <Link to="/">
                     <img src={logo} alt="Projuncture Logo" style={{ width: '50px', height: '50px' }} />
-                    </a>
+                </Link>
                 </div>
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                 Projuncture
-                </a>
+                </Link>
                 <form className="d-flex mt-2" role="search" style={styles.searchForm}>
                 <input
                     className="form-control me-2 rounded-pill"
@@ -61,11 +62,16 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li className="nav-item mx-2">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/projects">
                     Projelerim
-                    </a>
+                    </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item mx-2">
+                    <Link className="nav-link" to="/profile">
+                    <PermIdentityIcon />
+                    </Link>
+                </li>
+                {/* <li className="nav-item dropdown">
                     <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -77,9 +83,9 @@ export default function Navbar() {
                     </a>
                     <ul className="dropdown-menu">
                     <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="/profile">
                         Profil
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a className="dropdown-item" href="#">
@@ -95,7 +101,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     </ul>
-                </li>
+                </li> */}
                 </ul>
                 
             </div>
